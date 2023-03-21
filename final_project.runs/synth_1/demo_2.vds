@@ -1,0 +1,810 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Jan 18 10:58:19 2022
+# Process ID: 2496
+# Current directory: C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.runs/synth_1
+# Command line: vivado.exe -log demo_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source demo_2.tcl
+# Log file: C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.runs/synth_1/demo_2.vds
+# Journal file: C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source demo_2.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/NTHU/verilog/course project/lab6/KeyboardSampleCode/KeyboardSampleCode/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.cache/ip 
+Command: synth_design -top demo_2 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14324 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 844.637 ; gain = 233.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'demo_2' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:25]
+	Parameter C bound to: 9'b000011100 
+	Parameter D bound to: 9'b000011011 
+	Parameter E bound to: 9'b000100011 
+	Parameter F bound to: 9'b000101011 
+	Parameter G bound to: 9'b000110100 
+	Parameter A bound to: 9'b000110011 
+	Parameter B bound to: 9'b000111011 
+	Parameter r bound to: 9'b001101001 
+	Parameter b bound to: 9'b001111010 
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/clock_divider.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/clock_divider.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_addr_gen' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/mem_addr_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_addr_gen' (2#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/mem_addr_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-2496-DESKTOP-8ES30CV/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (3#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-2496-DESKTOP-8ES30CV/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/vga.v:6]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HS bound to: 96 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HT bound to: 800 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VS bound to: 2 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VT bound to: 525 - type: integer 
+	Parameter hsync_default bound to: 1'b1 
+	Parameter vsync_default bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (4#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/vga.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider_2' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1362]
+	Parameter n bound to: 22 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider_2' (5#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1362]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider_2__parameterized0' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1362]
+	Parameter n bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider_2__parameterized0' (5#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1362]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider_2__parameterized1' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1362]
+	Parameter n bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider_2__parameterized1' (5#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1362]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider_2__parameterized2' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1362]
+	Parameter n bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider_2__parameterized2' (5#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1362]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider_specified' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1379]
+	Parameter n bound to: 1500000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider_specified' (6#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1379]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider_specified__parameterized0' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1379]
+	Parameter n bound to: 187500 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider_specified__parameterized0' (6#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1379]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/debounce.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (7#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/debounce.v:1]
+INFO: [Synth 8-6157] synthesizing module 'onepulse' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/onepulse.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'onepulse' (8#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/onepulse.v:1]
+INFO: [Synth 8-6157] synthesizing module 'player_control' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/player_control.v:1]
+	Parameter LEN bound to: 4159 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'player_control' (9#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/player_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'player_control2' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/player_control2.v:1]
+	Parameter LEN bound to: 3135 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'player_control2' (10#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/player_control2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'music_example' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/music_jojo.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'music_example' (11#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/music_jojo.v:52]
+INFO: [Synth 8-6157] synthesizing module 'music_example2' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/music_lihong.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'music_example2' (12#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/music_lihong.v:36]
+WARNING: [Synth 8-6090] variable 'good' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:964]
+WARNING: [Synth 8-6090] variable 'good' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:991]
+WARNING: [Synth 8-6090] variable 'good' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1018]
+WARNING: [Synth 8-6090] variable 'good' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1045]
+WARNING: [Synth 8-6090] variable 'good' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1129]
+WARNING: [Synth 8-6090] variable 'good' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1156]
+WARNING: [Synth 8-6090] variable 'good' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1183]
+WARNING: [Synth 8-6090] variable 'good' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:1210]
+INFO: [Synth 8-6157] synthesizing module 'note_gen' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/note_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'note_gen' (13#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/note_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'speaker_control' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/speaker_control.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/speaker_control.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'speaker_control' (14#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/speaker_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardDecoder' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/keyboard_decoder.v:1]
+	Parameter INIT bound to: 2'b00 
+	Parameter WAIT_FOR_SIGNAL bound to: 2'b01 
+	Parameter GET_SIGNAL_DOWN bound to: 2'b10 
+	Parameter WAIT_RELEASE bound to: 2'b11 
+	Parameter IS_INIT bound to: 8'b10101010 
+	Parameter IS_EXTEND bound to: 8'b11100000 
+	Parameter IS_BREAK bound to: 8'b11110000 
+INFO: [Synth 8-6157] synthesizing module 'KeyboardCtrl_0' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-2496-DESKTOP-8ES30CV/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardCtrl_0' (15#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-2496-DESKTOP-8ES30CV/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/keyboard_decoder.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardDecoder' (16#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/keyboard_decoder.v:1]
+WARNING: [Synth 8-5856] 3D RAM position_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5788] Register _led_reg in module demo_2 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:889]
+WARNING: [Synth 8-3848] Net data in module/entity demo_2 does not have driver. [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'demo_2' (17#1) [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/top.v:25]
+WARNING: [Synth 8-3331] design player_control2 has unconnected port _play
+WARNING: [Synth 8-3331] design player_control2 has unconnected port _slow
+WARNING: [Synth 8-3331] design player_control has unconnected port _play
+WARNING: [Synth 8-3331] design player_control has unconnected port _slow
+WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port clk
+WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 953.781 ; gain = 342.969
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 953.781 ; gain = 342.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 953.781 ; gain = 342.969
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 953.781 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'k1/inst'
+Finished Parsing XDC File [c:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'k1/inst'
+Parsing XDC File [c:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
+Finished Parsing XDC File [c:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
+Parsing XDC File [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/demo_2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/demo_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/lab8_constrain.xdc]
+WARNING: [Vivado 12-507] No nets matched '_mode_IBUF'. [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/lab8_constrain.xdc:261]
+Finished Parsing XDC File [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/lab8_constrain.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/lab8_constrain.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/demo_2_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/lab8_constrain.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/demo_2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/demo_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1061.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1061.867 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1061.867 ; gain = 451.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1061.867 ; gain = 451.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  {c:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc}, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  {c:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc}, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  {c:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  {c:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for k1/inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_0_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1061.867 ; gain = 451.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/mem_addr_gen.v:48]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/mem_addr_gen.v:44]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/mem_addr_gen.v:40]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/mem_addr_gen.v:36]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/mem_addr_gen.v:32]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/mem_addr_gen.v:28]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'KeyboardDecoder'
+INFO: [Synth 8-5544] ROM "DIGIT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DIGIT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DISPLAY" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'DIGIT_reg' in module 'demo_2'
+WARNING: [Synth 8-327] inferring latch for variable 'next_ibeat_reg' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/player_control.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'next_ibeat_reg' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/player_control2.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'toneL_reg' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/music_jojo.v:2484]
+WARNING: [Synth 8-327] inferring latch for variable 'toneR_reg' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/music_jojo.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'toneL_reg' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/music_lihong.v:1876]
+WARNING: [Synth 8-327] inferring latch for variable 'toneR_reg' [C:/Users/user/Desktop/NTHU/verilog/course project/final project/music_test/music_lihong.v:50]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+         WAIT_FOR_SIGNAL |                               01 |                               01
+         GET_SIGNAL_DOWN |                               10 |                               10
+            WAIT_RELEASE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'KeyboardDecoder'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1061.867 ; gain = 451.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |demo_2__GB0   |           1|     27023|
+|2     |demo_2__GB1   |           1|     20137|
+|3     |demo_2__GB2   |           1|     12988|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 6     
+	   2 Input     17 Bit       Adders := 6     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 14    
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 15    
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Multipliers : 
+	                 5x32  Multipliers := 1     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     17 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 14    
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 7     
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 20    
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 24    
+	   6 Input      6 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 21    
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 94    
+	   4 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module demo_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 12    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 18    
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 24    
+	   6 Input      6 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 21    
+	   2 Input      3 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 79    
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module debounce__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module onepulse__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module onepulse__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module onepulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module player_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module player_control2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module note_gen 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 12    
+Module speaker_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+Module onepulse__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module KeyboardDecoder 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 7     
+Module clock_divider_specified__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_divider_specified 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module vga_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module mem_addr_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 6     
+	   2 Input     17 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 6     
++---Multipliers : 
+	                 5x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "DIGIT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DIGIT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DISPLAY" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'i_0/value0_reg[0]' (FDCE) to 'i_0/value0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/value0_reg[1]' (FDCE) to 'i_0/value0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/value0_reg[2]' (FDCE) to 'i_0/value0_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\value0_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_0/i_reg[7]' (FDCE) to 'i_0/i_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/i_reg[8]' (FDCE) to 'i_0/i_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/i_reg[9]' (FDCE) to 'i_0/i_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\i_reg[10] )
+INFO: [Synth 8-3886] merging instance 'i_0/i2_reg[7]' (FDCE) to 'i_0/i2_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/i2_reg[8]' (FDCE) to 'i_0/i2_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/i2_reg[9]' (FDCE) to 'i_0/i2_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\i2_reg[10] )
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[24]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[25]' (LDP) to 'i_0/music_02/toneL_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[26]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[27]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[28]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[29]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[30]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[31]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[9]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[10]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[11]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[12]' (LDP) to 'i_0/music_02/toneL_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[13]' (LDP) to 'i_0/music_02/toneL_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[14]' (LDP) to 'i_0/music_02/toneL_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[15]' (LDP) to 'i_0/music_02/toneL_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[16]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[17]' (LDP) to 'i_0/music_02/toneL_reg[19]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[18]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[19]' (LDP) to 'i_0/music_02/toneL_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[20]' (LDP) to 'i_0/music_02/toneL_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[21]' (LDP) to 'i_0/music_02/toneL_reg[22]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneL_reg[22]' (LDP) to 'i_0/music_02/toneL_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[0]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[24]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[26]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[27]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[28]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[29]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[30]' (LDC) to 'i_0/music_02/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[31]' (LDC) to 'i_0/music_02/toneR_reg[18]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[11]' (LDC) to 'i_0/music_02/toneR_reg[18]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[12]' (LDP) to 'i_0/music_02/toneR_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[13]' (LDP) to 'i_0/music_02/toneR_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[14]' (LDP) to 'i_0/music_02/toneR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[15]' (LDP) to 'i_0/music_02/toneR_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[16]' (LDC) to 'i_0/music_02/toneR_reg[18]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[17]' (LDP) to 'i_0/music_02/toneR_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/music_02/\toneR_reg[18] )
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[19]' (LDP) to 'i_0/music_02/toneR_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[20]' (LDP) to 'i_0/music_02/toneR_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[21]' (LDP) to 'i_0/music_02/toneR_reg[22]'
+INFO: [Synth 8-3886] merging instance 'i_0/music_02/toneR_reg[22]' (LDP) to 'i_0/music_02/toneR_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[0]' (FDE) to 'i_0/_led_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[1]' (FDE) to 'i_0/_led_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[2]' (FDE) to 'i_0/_led_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[3]' (FDE) to 'i_0/_led_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[4]' (FDE) to 'i_0/_led_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[5]' (FDE) to 'i_0/_led_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[6]' (FDE) to 'i_0/_led_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[7]' (FDE) to 'i_0/_led_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[8]' (FDE) to 'i_0/_led_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[9]' (FDE) to 'i_0/_led_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[10]' (FDE) to 'i_0/_led_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[12]' (FDE) to 'i_0/_led_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[13]' (FDE) to 'i_0/_led_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/_led_reg[14]' (FDE) to 'i_0/_led_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_right_reg[1]' (FDC) to 'i_0/sc/audio_right_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_right_reg[2]' (FDC) to 'i_0/sc/audio_right_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_right_reg[3]' (FDC) to 'i_0/sc/audio_right_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_right_reg[4]' (FDC) to 'i_0/sc/audio_right_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_right_reg[5]' (FDC) to 'i_0/sc/audio_right_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_right_reg[6]' (FDC) to 'i_0/sc/audio_right_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_right_reg[7]' (FDC) to 'i_0/sc/audio_right_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_right_reg[8]' (FDC) to 'i_0/sc/audio_right_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_right_reg[9]' (FDC) to 'i_0/sc/audio_right_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_right_reg[10]' (FDC) to 'i_0/sc/audio_right_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_right_reg[11]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[0]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[1]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[2]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[3]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[4]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[5]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[6]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[7]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[8]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[9]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[10]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/sc/audio_left_reg[11]' (FDC) to 'i_0/sc/audio_right_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/sc/\audio_right_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (toneR_reg[18]) is unused and will be removed from module music_example2.
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[29]' (LDC) to 'i_1/music_00/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[30]' (LDC) to 'i_1/music_00/toneR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[31]' (LDC) to 'i_1/music_00/toneR_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[11]' (LDC) to 'i_1/music_00/toneR_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[12]' (LDP) to 'i_1/music_00/toneR_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[13]' (LDP) to 'i_1/music_00/toneR_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[14]' (LDP) to 'i_1/music_00/toneR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[15]' (LDP) to 'i_1/music_00/toneR_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[16]' (LDC) to 'i_1/music_00/toneR_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[17]' (LDP) to 'i_1/music_00/toneR_reg[19]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[18]' (LDC) to 'i_1/music_00/toneR_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[19]' (LDP) to 'i_1/music_00/toneR_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_1/music_00/toneR_reg[20]' (LDP) to 'i_1/music_00/toneR_reg[21]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\music_00/toneL_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\position_reg[4][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\position_reg[3][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\position_reg[2][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\position_reg[1][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\position_reg[0][1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\position_reg[5][1][4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1061.867 ; gain = 451.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|music_example  | toneL      | 8192x26       | LUT            | 
+|music_example  | toneR      | 8192x26       | LUT            | 
+|music_example2 | toneL      | 8192x26       | LUT            | 
+|music_example2 | toneR      | 8192x26       | LUT            | 
+|demo_2         | p_0_out    | 128x12        | LUT            | 
+|demo_2         | p_0_out    | 128x11        | LUT            | 
+|demo_2         | p_0_out    | 128x1         | LUT            | 
+|demo_2         | p_0_out    | 128x1         | LUT            | 
+|music_example2 | toneL      | 8192x26       | LUT            | 
+|music_example2 | toneR      | 8192x26       | LUT            | 
+|demo_2         | p_0_out    | 128x1         | LUT            | 
+|demo_2         | p_0_out    | 128x1         | LUT            | 
+|demo_2         | p_0_out    | 128x12        | LUT            | 
+|demo_2         | p_0_out    | 128x11        | LUT            | 
+|music_example  | toneL      | 8192x26       | LUT            | 
+|music_example  | toneR      | 8192x26       | LUT            | 
++---------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |demo_2__GB0   |           1|      5288|
+|2     |demo_2__GB1   |           1|      3795|
+|3     |demo_2__GB2   |           1|      9451|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1061.867 ; gain = 451.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:01:43 . Memory (MB): peak = 1096.504 ; gain = 485.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |demo_2__GB0   |           1|      5221|
+|2     |demo_2__GB1   |           1|      3795|
+|3     |demo_2__GB2   |           1|      9451|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (playerCtrl_02/next_ibeat_reg[12]) is unused and will be removed from module demo_2.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1126.070 ; gain = 515.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 1130.715 ; gain = 519.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 1130.715 ; gain = 519.902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 1130.715 ; gain = 519.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 1130.715 ; gain = 519.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 1130.715 ; gain = 519.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 1130.715 ; gain = 519.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |blk_mem_gen_0  |         1|
+|2     |KeyboardCtrl_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |KeyboardCtrl_0 |     1|
+|2     |blk_mem_gen_0  |     1|
+|3     |BUFG           |     3|
+|4     |CARRY4         |  1458|
+|5     |LUT1           |   247|
+|6     |LUT2           |  2030|
+|7     |LUT3           |  2779|
+|8     |LUT4           |  1073|
+|9     |LUT5           |   404|
+|10    |LUT6           |   813|
+|11    |MUXF7          |   102|
+|12    |MUXF8          |    15|
+|13    |FDCE           |   198|
+|14    |FDPE           |    32|
+|15    |FDRE           |   192|
+|16    |FDSE           |     2|
+|17    |LD             |    25|
+|18    |LDC            |    36|
+|19    |LDP            |     8|
+|20    |IBUF           |     8|
+|21    |OBUF           |    45|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-----------------+----------------------------------------+------+
+|      |Instance         |Module                                  |Cells |
++------+-----------------+----------------------------------------+------+
+|1     |top              |                                        |  9494|
+|2     |  clock_22       |clock_divider_2                         |    29|
+|3     |  clock_de       |clock_divider_2__parameterized1         |    20|
+|4     |  clock_re       |clock_divider_2__parameterized2         |    23|
+|5     |  clk_wiz_0_inst |clock_divider                           |     4|
+|6     |  clock_19       |clock_divider_2__parameterized0         |    26|
+|7     |  clock_jo       |clock_divider_specified__parameterized0 |    48|
+|8     |  clock_jojo     |clock_divider_specified                 |    49|
+|9     |  d1             |debounce                                |    10|
+|10    |  d2             |debounce_0                              |    10|
+|11    |  d3             |debounce_1                              |    10|
+|12    |  k1             |KeyboardDecoder                         |    90|
+|13    |    op           |onepulse_4                              |     5|
+|14    |  music_00       |music_example                           |  2114|
+|15    |  music_02       |music_example2                          |  1940|
+|16    |  noteGen_00     |note_gen                                |   130|
+|17    |  o1             |onepulse                                |     2|
+|18    |  o2             |onepulse_2                              |     5|
+|19    |  o3             |onepulse_3                              |    17|
+|20    |  playerCtrl_00  |player_control                          |    93|
+|21    |  playerCtrl_02  |player_control2                         |    83|
+|22    |  sc             |speaker_control                         |   539|
+|23    |  vga_inst       |vga_controller                          |   736|
++------+-----------------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 1130.715 ; gain = 519.902
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 12 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:37 ; elapsed = 00:01:51 . Memory (MB): peak = 1130.715 ; gain = 411.816
+Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:01:56 . Memory (MB): peak = 1130.715 ; gain = 519.902
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.282 . Memory (MB): peak = 1130.715 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1644 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1130.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 69 instances were transformed.
+  LD => LDCE: 25 instances
+  LDC => LDCE: 36 instances
+  LDP => LDPE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+188 Infos, 28 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:04 ; elapsed = 00:02:08 . Memory (MB): peak = 1130.715 ; gain = 793.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1130.715 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/NTHU/verilog/course project/final project/final_project/final_project.runs/synth_1/demo_2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file demo_2_utilization_synth.rpt -pb demo_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 18 11:00:37 2022...
